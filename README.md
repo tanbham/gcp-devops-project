@@ -44,7 +44,7 @@ This trigger describes when to execute the CI/CD pipeline, the pipeline code is 
 - We need to write on yaml file and commit to github repo, cloud build will read the file accordingly.
 - This yaml file will have CI or CD code
 
-Step6: Write cloudbuild.yaml file : Refer cloudbuild.yaml
+**Step6:** Write cloudbuild.yaml file : Refer cloudbuild.yaml
 
 Conclusion:
 - Whenever there is change in code, developer will create a feature branch from  main branch
