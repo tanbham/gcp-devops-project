@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gcp-devops-gke
+spec:
+  replicas: 1
+  selector:
+    matchlabels:
+      app: tanmay
+  template:
+    metadata:
+      labels:
+        app: tanmay
+    spec:
+      containers:
+      - name: python-flask-app
+        image:  gcr.io./google-devops-project/gcpdevops/pythonimage:latest
+        ports:
+        - containerPort: 5000
